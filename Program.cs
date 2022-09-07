@@ -16,7 +16,6 @@ namespace md07_CadernoExercicios_04
                         */
         public static int idade;
         public static string classCateg;
-        public static double testeLog2;
 
         public static void classificarCategorias()
         {
@@ -52,8 +51,6 @@ namespace md07_CadernoExercicios_04
                 classCateg = "Esta idade (" + idade + " anos) " +
                     "não pode participar de campionatos. ";
             }
-
-
         }
         public static void retornoCategoria()
         {
