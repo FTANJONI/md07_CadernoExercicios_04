@@ -15,7 +15,7 @@ namespace md07_CadernoExercicios_04
         4. Refazer o exercício 3 de forma que o método receba a idade por parâmetro.
                         */
         public static int idade;
-        public static string classCateg;
+        public static string classCateg, sair = "1";
 
         public static void classificarCategorias()
         {
@@ -65,18 +65,20 @@ namespace md07_CadernoExercicios_04
                     "classificação do nadador é " + classCateg);
             }
         }
-        static void Main(string[] args)
-
+        public static void fecharprograma()
         {
-            string sair = "1";
+            Console.WriteLine("\nDigite qualquer tecla " +
+                "para sair ou 1 para continuar");
+            sair = Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
             do
             {
                 classificarCategorias();
                 retornoCategoria();
+                fecharprograma();
 
-                Console.WriteLine("\nDigite qualquer tecla " +
-                    "para sair ou 1 para continuar");
-                sair = Console.ReadLine();
             } while (sair.Equals("1"));
         }
     }
